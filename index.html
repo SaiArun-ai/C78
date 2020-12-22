@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Arrays C78</title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <h1>Arrays</h1>
+        <h2>How To declasre an array?</h2>
+        <h3 id = "Ans1"></h3>
+        <h2>How to fetch the first element of the array ?</h2>
+        <h3 id = "Ans2"></h3>
+        <h2>How to fetch the second element of the array ?</h2>
+        <h3 id = "Ans3"></h3>
+        <h2>How to fetch the second element of the array ?</h2>
+        <h3 id = "Ans4"></h3>
+        <h2>How to get the length of the array ?</h2>
+        <h3 id = "Ans5"></h3>
+        <h2>How to loop the array ?</h2>
+        <h3 id = "Ans6"></h3>
+        <h2>How to add element at the end of the array ?</h2>
+        <h3 id = "Ans7"></h3>
+        <h2>How to add more elements at the end of the array ?</h2>
+        <h3 id = "Ans8"></h3>
+        <h1>How to declare the arrays with alphabets ?</h1>
+        <h3 id = "Ans9"></h3>
+        <h1>How to sort the arrays with alphabets ?</h1>
+        <h3 id = "Ans10"></h3>
+        <h1>How to reverse the arrays with alphabets ?</h1>
+        <h3 id = "Ans11"></h3>
+        <p>
+            How to find the maximum number from the arrays ? </p>
+        <h4 id="display_maximum_number"> </h4>
+        <p>
+            How to find the Miniimum number from the arrays ? </p>
+        <h4 id="display_minimum_number"> </h4>
+        <p>
+            How to find the Miniimum number from the arrays ? </p>
+        <h4 id="display_minimum_number1"> </h4>
+        <script>
+            var Array1 = ["Gold", "Silver", "Platinum"];
+            document.getElementById("Ans1").innerHTML = Array1; 
+            document.getElementById("Ans2").innerHTML = Array1[0];
+            document.getElementById("Ans3").innerHTML = Array1[1];
+            document.getElementById("Ans4").innerHTML = Array1[2];
+            var Array2 = [];
+            document.getElementById("Ans5").innerHTML = Array1.length;
+            for(x = 0 ; x < Array1.length ; x++){
+                Array2 = Array2 + Array1[x] + "<br>";
+            }
+            document.getElementById("Ans6").innerHTML = Array2;
+            Array1.push("Bronze");
+            document.getElementById("Ans7").innerHTML = Array1;
+            Array1.push("Tin");
+            document.getElementById("Ans8").innerHTML = Array1;
+            var Array3 = ["q","w","e","r","t","y","u","i","o","p","a","s","d","f","g","h","j","k","l","z","x","c","v","b","n","m"];
+            document.getElementById("Ans9").innerHTML = Array3;
+            var V1 = Array3.sort();
+            document.getElementById("Ans10").innerHTML = V1;
+            Array3.reverse();
+            document.getElementById("Ans11").innerHTML = Array3;
+            var Array4 = ["0","1","2","3","4","5"];
+            var V2 = Math.max.apply(Math,Array4);
+            document.getElementById("display_maximum_number").innerHTML = V2;
+            var V3 = Math.min.apply(Math,Array4);
+            document.getElementById("display_minimum_number").innerHTML = V3;
+            Array4.shift();
+            document.getElementById("display_minimum_number1").innerHTML = Array4;
+        </script>
+    </body>
+</html>
